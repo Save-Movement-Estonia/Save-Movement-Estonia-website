@@ -6,16 +6,17 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type = "text/javascript" src = "functions.js"></script>
     <title>Save Movement Estonia</title>
 </head>
 <body> 
 <div class="content">
     <div class="topnav">
-        <a href="index.html">
+        <a class="logo-link" href="index.html">
             <img class="logo" src="assets/logo.png" alt="Save Movement">
         </a>
-        <div class="topnav-right">
+        <div class="topnav-right hide-mobile">
             <div class="dropdown">
                 <a class="dropbtn dropbtn-normal" href="index.html">ABOUT US</a>
                 <div class="dropdown-content dropdown-content-aboutus">
@@ -36,26 +37,64 @@
                 <a class="dropbtn dropbtn-normal" href="donate.html">DONATE</a>
             </div>
             <div class="dropdown">
-                <button class="dropbtn dropbtn-language">ENG</button>
+                <a class="dropbtn">ENG</a>
                 <div class="dropdown-content dropdown-content-language">
                     <a href="est/est.html">EST</a><br>
                     <a href="rus/rus.html">RUS</a>
                 </div>
             </div> 
         </div>
+        <div id="nav-main" class="hide-desktop">
+            <div class="row">
+                <a class="width90" href="index.html">ABOUT US</a>
+                <button class="right width10 dropbtn-right" onclick="toggle('nav-aboutus')">
+                    <i class="fa fa-caret-down "></i>
+                </button>
+            </div>
+            <div id="nav-aboutus" class="dropdown-content">
+                <a href="our-demands.html">OUR DEMANDS</a><br>
+                <a href="core-values.html">CORE VALUES</a><br>
+                <a href="code-of-conduct.html">CODE OF CONDUCT</a>
+            </div>
+            <div class="row">
+                <a class="width90" href="join-us.html">JOIN US</a>
+                <button class="right width10 dropbtn-right" onclick="toggle('nav-joinus')">
+                    <i class="fa fa-caret-down "></i>
+                </button>
+            </div>
+            <div id="nav-joinus" class="dropdown-content">
+                <a href="animal-save.html">ANIMAL SAVE</a><br>
+                <a href="climate-save.html">CLIMATE SAVE</a><br>
+                <a href="health-save.html">HEALTH SAVE</a>
+            </div>
+            <a class="" href="donate.html">DONATE</a>
+            <div class="row">
+                <span class=" width90" style="font-size:1em">ENG</span>
+                <button class="right width10 dropbtn-right" onclick="toggle('nav-language')">
+                    <i class="fa fa-caret-down "></i>
+                </button>
+            </div>
+            <div id="nav-language" class="dropdown-content fontsize1">
+                <a href="est/est.html">EST</a><br>
+                <a href="rus/rus.html">RUS</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="icon hide-desktop" onclick="toggle('nav-main')">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
     <div class="page-body">
         <div class="page-content">
             <div class="filler2"></div>
             <div class="filler2"></div>
-            <div class="wrap">
-                <img class="cv-first" src="https://thesavemovement.org/wp-content/uploads/2021/03/animal-save-movement-donate.jpg" 
-                alt="" width=70%/>
-                <div class="cv-second">
+            <div class="grid">
+                <img src="https://thesavemovement.org/wp-content/uploads/2021/03/animal-save-movement-donate.jpg" class="img-donate"
+                alt=""/>
+                <div>
                 <script src="https://donorbox.org/widget.js" paypalExpress="true"></script>
-                <iframe allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" 
-                seamless="seamless" src="https://donorbox.org/embed/standard-donate-box-2" style="max-width: 
-                400px; min-width: 250px; max-height: none!important;" width="100%"></iframe>
+                <iframe allowpaymentrequest="" frameborder="0" height="900px" width="320px" name="donorbox" scrolling="no" 
+                    seamless="seamless" src="https://donorbox.org/embed/standard-donate-box-2" style="width: 
+                    350px; max-height: none!important;" width="100%"></iframe>
                 </div>
             </div>
             <div class="filler1"></div>
