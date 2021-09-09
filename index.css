@@ -488,6 +488,11 @@ ul {
 }
 
 @media screen and (max-width: 800px) {
+
+    .img-donate {
+        min-width: 100px;
+    }
+
     .grid { 
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto-fit);
