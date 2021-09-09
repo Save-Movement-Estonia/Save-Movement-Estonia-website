@@ -474,11 +474,11 @@ ul {
 }
 
 .grid { 
-    margin: auto;
+    width: 100%;
     display: grid;
     place-items: center;
     grid-gap: 1rem;
-    grid-template-columns: fit-content(700px) 1fr;
+    grid-template-columns: fit-content(700px) 350px;
 }
 
 .img-donate {
@@ -487,10 +487,18 @@ ul {
     width: 100%;
 }
 
+.box-donate {
+    width: 350px;
+}
+
 @media screen and (max-width: 800px) {
 
     .img-donate {
         min-width: 100px;
+    }
+
+    .box-donate {
+        width: 100%;
     }
 
     .grid { 
